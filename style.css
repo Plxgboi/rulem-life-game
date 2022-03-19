@@ -1,0 +1,86 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 10px solid #000;
+    margin: auto;
+}
+
+#head {
+    width: 70px;
+    height: 70px;
+    background-image: url(head.png);
+    background-size: 70px 70px;
+    position: relative;
+    top: 130px;
+    z-index: 9999;
+    left: 40px;
+}
+
+#money {
+    width: 50px;
+    height: 60px;
+    background-image: url(money.png);
+    background-size: 50px 60px;
+    position: relative;
+    bottom: 20px;
+    left: 550px;
+    animation: moneymov 2s infinite linear;
+}
+
+#counter {
+    position: relative;
+    right: 200px;
+}
+
+@keyframes moneymov {
+    0% {
+        left: 550px;
+    }
+    100% {
+        left: 20px;
+    }
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 130px;
+    }
+    10% {
+        top: 110px;
+    }
+    20% {
+        top: 90px;
+    }
+    30% {
+        top: 85px;
+    }
+    40% {
+        top: 75px;
+    }
+    50% {
+        top: 55px;
+    }
+    60% {
+        top: 75px;
+    }
+    70% {
+        top: 85px;
+    }
+    80% {
+        top: 90px;
+    }
+    90% {
+        top: 110px;
+    }
+    100% {
+        top: 130px;
+    }
+}
+
+.done {
+    opacity: 0;
+}
